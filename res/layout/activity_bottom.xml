@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/pic_content"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingTop="8dp" >
+
+
+        <LinearLayout
+            android:id="@+id/open_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/open_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/open_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/open_pic_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="图片" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/take_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/take_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/take_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/take_pic_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="拍照" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/save_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/selector_edit_pic"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <ImageView
+                android:id="@+id/save_pic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/open_picture"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/save_pic_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:gravity="center"
+                android:text="生图" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>
